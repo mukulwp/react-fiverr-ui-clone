@@ -1,0 +1,43 @@
+.myGigs {
+  padding: 3rem 0;
+  .container {
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        padding: 8px 10px;
+      }
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      tr {
+        height: 50px;
+        th {
+          text-align: left;
+        }
+        td {
+          img {
+            width: 3rem;
+            object-fit: cover;
+          }
+          button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            img {
+              width: 1.5rem;
+            }
+          }
+        }
+        &:nth-child(even) {
+          background-color: #1dbf730f;
+        }
+      }
+    }
+  }
+}
